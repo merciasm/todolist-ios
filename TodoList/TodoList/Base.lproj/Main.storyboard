@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rVs-gx-Ifh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f22-ba-8uV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Checklist View Controller-->
+        <!--Todo List-->
         <scene sceneID="6hO-4G-bua">
             <objects>
                 <tableViewController id="rVs-gx-Ifh" customClass="ChecklistViewController" customModule="TodoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,8 +46,34 @@
                             <outlet property="delegate" destination="rVs-gx-Ifh" id="SmE-H0-i6P"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Todo List" id="Rjz-VU-EAN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wgo-sf-u4Y">
+                            <connections>
+                                <action selector="additem:" destination="rVs-gx-Ifh" id="BHQ-4Q-73G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jF-uK-6lD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114.4000000000001" y="59.820089955022496"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZXQ-Pb-nRR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f22-ba-8uV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eTe-il-Xe0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rVs-gx-Ifh" kind="relationship" relationship="rootViewController" id="kHz-F6-Xmi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2f-PZ-NEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="175.19999999999999" y="59.820089955022496"/>
         </scene>
