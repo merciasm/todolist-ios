@@ -24,6 +24,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zg0-Vl-wth" id="hiU-Wm-xIW">
                                     <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUi-rZ-nJw">
+                                            <rect key="frame" x="20" y="11" width="295" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="DUi-rZ-nJw" secondAttribute="bottom" constant="11.5" id="7pT-Vl-JIG"/>
+                                        <constraint firstItem="DUi-rZ-nJw" firstAttribute="leading" secondItem="hiU-Wm-xIW" secondAttribute="leading" constant="20" symbolic="YES" id="W6W-BF-cJV"/>
+                                        <constraint firstAttribute="trailing" secondItem="DUi-rZ-nJw" secondAttribute="trailing" constant="20" symbolic="YES" id="bZW-FX-Pv2"/>
+                                        <constraint firstItem="DUi-rZ-nJw" firstAttribute="top" secondItem="hiU-Wm-xIW" secondAttribute="top" constant="11" id="s2Y-cU-fK3"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -35,7 +49,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jF-uK-6lD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176" y="60"/>
+            <point key="canvasLocation" x="175.19999999999999" y="59.820089955022496"/>
         </scene>
     </scenes>
 </document>
