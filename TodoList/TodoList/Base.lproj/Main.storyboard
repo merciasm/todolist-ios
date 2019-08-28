@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="Zg0-Vl-wth">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="Zg0-Vl-wth" customClass="ChecklistTableViewCell" customModule="TodoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zg0-Vl-wth" id="hiU-Wm-xIW">
@@ -51,6 +51,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="checkmarkLabel" destination="SS8-D1-eiq" id="nRN-X7-gto"/>
+                                    <outlet property="todoTextLabel" destination="DUi-rZ-nJw" id="m2S-QP-uOX"/>
                                     <segue destination="HKy-ae-yYH" kind="show" identifier="EditItemSegue" trigger="accessoryAction" id="QN3-Kn-guY"/>
                                 </connections>
                             </tableViewCell>
