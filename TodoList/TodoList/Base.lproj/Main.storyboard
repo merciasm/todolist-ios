@@ -63,11 +63,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Todo List" id="Rjz-VU-EAN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wgo-sf-u4Y">
-                            <connections>
-                                <segue destination="HKy-ae-yYH" kind="show" identifier="AddItemSegue" id="nmK-ED-LhE"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="Wgo-sf-u4Y">
+                                <connections>
+                                    <segue destination="HKy-ae-yYH" kind="show" identifier="AddItemSegue" id="nmK-ED-LhE"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Delete" id="DL7-mb-Zqb">
+                                <connections>
+                                    <action selector="deleteItems:" destination="rVs-gx-Ifh" id="2cJ-9X-8YL"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>

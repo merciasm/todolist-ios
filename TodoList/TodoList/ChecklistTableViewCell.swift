@@ -12,8 +12,6 @@ class ChecklistTableViewCell: UITableViewCell {
     
     @IBOutlet weak var checkmarkLabel: UILabel!
     @IBOutlet weak var todoTextLabel: UILabel!
-    
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
